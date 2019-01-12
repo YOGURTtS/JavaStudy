@@ -2,6 +2,7 @@ package com.yogurts.map;
 
 import com.yogurts.collection.YGLinkedList;
 
+/* 字典 = 数组 + 链表 */
 public class YGMap {
 
 
