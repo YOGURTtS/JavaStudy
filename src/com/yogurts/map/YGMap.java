@@ -46,6 +46,7 @@ public class YGMap {
             YGLinkedList linkedList = new YGLinkedList();
             linkedList.add(entry);
             arr[index] = linkedList;
+            size++;
         } else {
             // 该index对应的值不为空
             YGLinkedList linkedList = arr[index];
@@ -59,6 +60,7 @@ public class YGMap {
             }
             // key不存在，添加数据
             arr[index].add(entry);
+            size++;
         }
     }
 
@@ -75,6 +77,11 @@ public class YGMap {
             }
         }
         return null;
+    }
+
+    /* 返回size */
+    public int size() {
+        return size;
     }
 
 //    /* 是否包含key */
